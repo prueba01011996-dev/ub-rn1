@@ -1,2 +1,1 @@
-urllist https://github.com/smplayer-dev/smplayer/tags | grep 'tar\.gz' | grep -o 'v[0-9]*\.[0-9]*\.[0-9]' | sed -e 's/v//' | sort -V | tail -n1
-# u2d https://github.com/smplayer-dev/smplayer/tags v
+urllist https://github.com/smplayer-dev/smplayer/tags | grep 'tar\.gz' | grep -o 'v[0-9]*\.[0-9]*\.[0-9]*' | sed -e 's/v//' | sort -V | tail -n1

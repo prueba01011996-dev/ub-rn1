@@ -1,16 +1,6 @@
-dbus-glib-dev
-gcr-dev
-gobject-introspection-dev
 gtk3-dev
-iso-codes
 jansson-dev
-libgudev-dev
 libnma-dev
-libnotify-dev
 libsecret-dev
-libsm-dev
-meson
 modemmanager-dev
 networkmanager-dev
-polkit-dev
-systemd-dev

@@ -1,4 +1,7 @@
 #!/usr/bin/env dl
 
-seahorse-${UB_VERSION}.tar.xz seahorse-${UB_VERSION}/
-	https://download.gnome.org/sources/seahorse/${UB_VERSION_HEAD1}/
+#seahorse-${UB_VERSION}.tar.xz seahorse-${UB_VERSION}/
+#	https://download.gnome.org/sources/seahorse/${UB_VERSION_HEAD1}/
+
+seahorse-${UB_VERSION}.tar.gz seahorse-82f861c/
+    git+https://github.com/GNOME/seahorse.git@82f861c

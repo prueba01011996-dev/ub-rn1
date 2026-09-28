@@ -1,5 +1,4 @@
 libei # kwin
-gcr # seahorse
 libpeas # eom, pluma, pluma-plugins
 libpeas2 # liferea
 libgxps # atril, evince

@@ -9,5 +9,7 @@ libgphoto2-dev
 libgudev-dev
 libportal-dev
 libraw-dev
+libsecret-dev
+libsoup3-dev
 sqlite-dev
 vala

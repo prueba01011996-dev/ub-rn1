@@ -1,8 +1,0 @@
-gobject-introspection-dev
-gpg
-gtk3-dev
-libsecret-dev
-libxslt-dev
-openssh
-p11-kit-dev
-vala

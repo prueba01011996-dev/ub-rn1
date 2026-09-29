@@ -1,6 +1,6 @@
 diff -Naur a/Modules/Compiler/Absoft-Fortran.cmake b/Modules/Compiler/Absoft-Fortran.cmake
---- a/Modules/Compiler/Absoft-Fortran.cmake	2025-09-30 16:48:33.000000000 +0200
-+++ b/Modules/Compiler/Absoft-Fortran.cmake	2025-10-19 18:53:27.675555555 +0200
+--- a/Modules/Compiler/Absoft-Fortran.cmake	2026-08-25 17:10:30.000000000 +0200
++++ b/Modules/Compiler/Absoft-Fortran.cmake	2026-09-28 21:59:05.571522920 +0200
 @@ -1,7 +1,7 @@
  string(APPEND CMAKE_Fortran_FLAGS_INIT " ")
  string(APPEND CMAKE_Fortran_FLAGS_DEBUG_INIT " -g")
@@ -11,8 +11,8 @@ diff -Naur a/Modules/Compiler/Absoft-Fortran.cmake b/Modules/Compiler/Absoft-For
  set(CMAKE_Fortran_MODDIR_FLAG "-YMOD_OUT_DIR=")
  set(CMAKE_Fortran_MODPATH_FLAG "-p")
 diff -Naur a/Modules/Compiler/Fujitsu.cmake b/Modules/Compiler/Fujitsu.cmake
---- a/Modules/Compiler/Fujitsu.cmake	2025-09-30 16:48:33.000000000 +0200
-+++ b/Modules/Compiler/Fujitsu.cmake	2025-10-19 18:53:27.675555555 +0200
+--- a/Modules/Compiler/Fujitsu.cmake	2026-08-25 17:10:30.000000000 +0200
++++ b/Modules/Compiler/Fujitsu.cmake	2026-09-28 21:59:05.571743233 +0200
 @@ -16,7 +16,7 @@
    # Initial configuration flags
    string(APPEND CMAKE_${lang}_FLAGS_INIT " ")
@@ -23,8 +23,8 @@ diff -Naur a/Modules/Compiler/Fujitsu.cmake b/Modules/Compiler/Fujitsu.cmake
  
    # PIC flags
 diff -Naur a/Modules/Compiler/G95-Fortran.cmake b/Modules/Compiler/G95-Fortran.cmake
---- a/Modules/Compiler/G95-Fortran.cmake	2025-09-30 16:48:33.000000000 +0200
-+++ b/Modules/Compiler/G95-Fortran.cmake	2025-10-19 18:53:27.675555555 +0200
+--- a/Modules/Compiler/G95-Fortran.cmake	2026-08-25 17:10:30.000000000 +0200
++++ b/Modules/Compiler/G95-Fortran.cmake	2026-09-28 21:59:05.571923836 +0200
 @@ -1,7 +1,7 @@
  string(APPEND CMAKE_Fortran_FLAGS_INIT " ")
  string(APPEND CMAKE_Fortran_FLAGS_DEBUG_INIT " -g")
@@ -35,8 +35,8 @@ diff -Naur a/Modules/Compiler/G95-Fortran.cmake b/Modules/Compiler/G95-Fortran.c
  set(CMAKE_Fortran_MODDIR_FLAG "-fmod=")
  set(CMAKE_Fortran_VERBOSE_FLAG "-v")
 diff -Naur a/Modules/Compiler/GNU.cmake b/Modules/Compiler/GNU.cmake
---- a/Modules/Compiler/GNU.cmake	2025-09-30 16:48:33.000000000 +0200
-+++ b/Modules/Compiler/GNU.cmake	2025-10-19 18:53:27.675555555 +0200
+--- a/Modules/Compiler/GNU.cmake	2026-08-25 17:10:30.000000000 +0200
++++ b/Modules/Compiler/GNU.cmake	2026-09-28 21:59:05.572130324 +0200
 @@ -58,7 +58,7 @@
    string(APPEND CMAKE_${lang}_FLAGS_INIT " ")
    string(APPEND CMAKE_${lang}_FLAGS_DEBUG_INIT " -g")
@@ -47,8 +47,8 @@ diff -Naur a/Modules/Compiler/GNU.cmake b/Modules/Compiler/GNU.cmake
    if(NOT "x${lang}" STREQUAL "xFortran")
      string(APPEND CMAKE_${lang}_FLAGS_MINSIZEREL_INIT " -DNDEBUG")
 diff -Naur a/Modules/Compiler/Intel.cmake b/Modules/Compiler/Intel.cmake
---- a/Modules/Compiler/Intel.cmake	2025-09-30 16:48:33.000000000 +0200
-+++ b/Modules/Compiler/Intel.cmake	2025-10-19 18:53:27.675555555 +0200
+--- a/Modules/Compiler/Intel.cmake	2026-08-25 17:10:30.000000000 +0200
++++ b/Modules/Compiler/Intel.cmake	2026-09-28 21:59:05.572331821 +0200
 @@ -29,7 +29,7 @@
      string(APPEND CMAKE_${lang}_FLAGS_INIT " ")
      string(APPEND CMAKE_${lang}_FLAGS_DEBUG_INIT " -g")
@@ -59,8 +59,8 @@ diff -Naur a/Modules/Compiler/Intel.cmake b/Modules/Compiler/Intel.cmake
  
      # Compiler + IPO does not recognize --dependency-file link option
 diff -Naur a/Modules/Compiler/Intel-ISPC.cmake b/Modules/Compiler/Intel-ISPC.cmake
---- a/Modules/Compiler/Intel-ISPC.cmake	2025-09-30 16:48:33.000000000 +0200
-+++ b/Modules/Compiler/Intel-ISPC.cmake	2025-10-19 18:53:27.679555564 +0200
+--- a/Modules/Compiler/Intel-ISPC.cmake	2026-08-25 17:10:30.000000000 +0200
++++ b/Modules/Compiler/Intel-ISPC.cmake	2026-09-28 21:59:05.572499927 +0200
 @@ -13,7 +13,7 @@
  
  string(APPEND CMAKE_ISPC_FLAGS_INIT " ")
@@ -71,8 +71,8 @@ diff -Naur a/Modules/Compiler/Intel-ISPC.cmake b/Modules/Compiler/Intel-ISPC.cma
  string(APPEND CMAKE_ISPC_FLAGS_RELWITHDEBINFO_INIT " -O2 -g -DNDEBUG")
  
 diff -Naur a/Modules/Compiler/IntelLLVM.cmake b/Modules/Compiler/IntelLLVM.cmake
---- a/Modules/Compiler/IntelLLVM.cmake	2025-09-30 16:48:33.000000000 +0200
-+++ b/Modules/Compiler/IntelLLVM.cmake	2025-10-19 18:53:27.679555564 +0200
+--- a/Modules/Compiler/IntelLLVM.cmake	2026-08-25 17:10:30.000000000 +0200
++++ b/Modules/Compiler/IntelLLVM.cmake	2026-09-28 21:59:05.572687405 +0200
 @@ -60,7 +60,7 @@
        endif()
      endif()
@@ -83,8 +83,8 @@ diff -Naur a/Modules/Compiler/IntelLLVM.cmake b/Modules/Compiler/IntelLLVM.cmake
  
      set(_CMAKE_${lang}_PIE_MAY_BE_SUPPORTED_BY_LINKER YES)
 diff -Naur a/Modules/Compiler/LCC.cmake b/Modules/Compiler/LCC.cmake
---- a/Modules/Compiler/LCC.cmake	2025-09-30 16:48:33.000000000 +0200
-+++ b/Modules/Compiler/LCC.cmake	2025-10-19 18:53:27.679555564 +0200
+--- a/Modules/Compiler/LCC.cmake	2026-08-25 17:10:30.000000000 +0200
++++ b/Modules/Compiler/LCC.cmake	2026-09-28 21:59:05.572887692 +0200
 @@ -54,7 +54,7 @@
    string(APPEND CMAKE_${lang}_FLAGS_INIT " ")
    string(APPEND CMAKE_${lang}_FLAGS_DEBUG_INIT " -g")
@@ -95,8 +95,8 @@ diff -Naur a/Modules/Compiler/LCC.cmake b/Modules/Compiler/LCC.cmake
    set(CMAKE_${lang}_CREATE_PREPROCESSED_SOURCE "<CMAKE_${lang}_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -E <SOURCE> > <PREPROCESSED_SOURCE>")
    set(CMAKE_${lang}_CREATE_ASSEMBLY_SOURCE "<CMAKE_${lang}_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -S <SOURCE> -o <ASSEMBLY_SOURCE>")
 diff -Naur a/Modules/Compiler/LCC-Fortran.cmake b/Modules/Compiler/LCC-Fortran.cmake
---- a/Modules/Compiler/LCC-Fortran.cmake	2025-09-30 16:48:33.000000000 +0200
-+++ b/Modules/Compiler/LCC-Fortran.cmake	2025-10-19 18:53:27.679555564 +0200
+--- a/Modules/Compiler/LCC-Fortran.cmake	2026-08-25 17:10:30.000000000 +0200
++++ b/Modules/Compiler/LCC-Fortran.cmake	2026-09-28 21:59:05.573067475 +0200
 @@ -20,7 +20,7 @@
  
  # No -DNDEBUG for Fortran.
@@ -107,8 +107,8 @@ diff -Naur a/Modules/Compiler/LCC-Fortran.cmake b/Modules/Compiler/LCC-Fortran.c
  # No -isystem for Fortran because it will not find .mod files.
  unset(CMAKE_INCLUDE_SYSTEM_FLAG_Fortran)
 diff -Naur a/Modules/Compiler/LFortran-Fortran.cmake b/Modules/Compiler/LFortran-Fortran.cmake
---- a/Modules/Compiler/LFortran-Fortran.cmake	2025-09-30 16:48:33.000000000 +0200
-+++ b/Modules/Compiler/LFortran-Fortran.cmake	2025-10-19 18:53:27.679555564 +0200
+--- a/Modules/Compiler/LFortran-Fortran.cmake	2026-08-25 17:10:30.000000000 +0200
++++ b/Modules/Compiler/LFortran-Fortran.cmake	2026-09-28 21:59:05.573259418 +0200
 @@ -1,6 +1,6 @@
  string(APPEND CMAKE_Fortran_FLAGS_DEBUG_INIT " -g")
  string(APPEND CMAKE_Fortran_FLAGS_MINSIZEREL_INIT " ")
@@ -118,19 +118,21 @@ diff -Naur a/Modules/Compiler/LFortran-Fortran.cmake b/Modules/Compiler/LFortran
  set(CMAKE_Fortran_MODDIR_FLAG "-J")
  set(CMAKE_Fortran_VERBOSE_FLAG "-v -Wl,-v")
 diff -Naur a/Modules/Compiler/LLVMFlang-Fortran.cmake b/Modules/Compiler/LLVMFlang-Fortran.cmake
---- a/Modules/Compiler/LLVMFlang-Fortran.cmake	2025-09-30 16:48:33.000000000 +0200
-+++ b/Modules/Compiler/LLVMFlang-Fortran.cmake	2025-10-19 18:53:27.679555564 +0200
-@@ -27,5 +27,5 @@
+--- a/Modules/Compiler/LLVMFlang-Fortran.cmake	2026-08-25 17:10:30.000000000 +0200
++++ b/Modules/Compiler/LLVMFlang-Fortran.cmake	2026-09-28 21:59:05.573505629 +0200
+@@ -30,7 +30,7 @@
  
    string(APPEND CMAKE_Fortran_FLAGS_DEBUG_INIT " -O0 -g")
    string(APPEND CMAKE_Fortran_FLAGS_RELWITHDEBINFO_INIT " -O2 -g")
 -  string(APPEND CMAKE_Fortran_FLAGS_RELEASE_INIT " -O3")
 +  string(APPEND CMAKE_Fortran_FLAGS_RELEASE_INIT " -O2")
  endif()
+ 
+ set(CMAKE_SHARED_LIBRARY_Fortran_FLAGS -fPIC)
 diff -Naur a/Modules/Compiler/NVIDIA.cmake b/Modules/Compiler/NVIDIA.cmake
---- a/Modules/Compiler/NVIDIA.cmake	2025-09-30 16:48:33.000000000 +0200
-+++ b/Modules/Compiler/NVIDIA.cmake	2025-10-19 18:53:27.679555564 +0200
-@@ -139,7 +139,7 @@
+--- a/Modules/Compiler/NVIDIA.cmake	2026-08-25 17:10:30.000000000 +0200
++++ b/Modules/Compiler/NVIDIA.cmake	2026-09-28 21:59:05.574306814 +0200
+@@ -153,7 +153,7 @@
      set(CMAKE_SHARED_LIBRARY_${lang}_FLAGS -fPIC)
      string(APPEND CMAKE_${lang}_FLAGS_INIT " ")
      string(APPEND CMAKE_${lang}_FLAGS_DEBUG_INIT " -g")
@@ -140,8 +142,8 @@ diff -Naur a/Modules/Compiler/NVIDIA.cmake b/Modules/Compiler/NVIDIA.cmake
      string(APPEND CMAKE_${lang}_FLAGS_RELWITHDEBINFO_INIT " -O2 -g -DNDEBUG")
    endif()
 diff -Naur a/Modules/Compiler/PathScale.cmake b/Modules/Compiler/PathScale.cmake
---- a/Modules/Compiler/PathScale.cmake	2025-09-30 16:48:33.000000000 +0200
-+++ b/Modules/Compiler/PathScale.cmake	2025-10-19 18:53:27.679555564 +0200
+--- a/Modules/Compiler/PathScale.cmake	2026-08-25 17:10:30.000000000 +0200
++++ b/Modules/Compiler/PathScale.cmake	2026-09-28 21:59:05.575643229 +0200
 @@ -18,6 +18,6 @@
    string(APPEND CMAKE_${lang}_FLAGS_INIT " ")
    string(APPEND CMAKE_${lang}_FLAGS_DEBUG_INIT " -g -O0")
@@ -151,8 +153,8 @@ diff -Naur a/Modules/Compiler/PathScale.cmake b/Modules/Compiler/PathScale.cmake
    string(APPEND CMAKE_${lang}_FLAGS_RELWITHDEBINFO_INIT " -g -O2")
  endmacro()
 diff -Naur a/Modules/Compiler/PGI.cmake b/Modules/Compiler/PGI.cmake
---- a/Modules/Compiler/PGI.cmake	2025-09-30 16:48:33.000000000 +0200
-+++ b/Modules/Compiler/PGI.cmake	2025-10-19 18:53:27.679555564 +0200
+--- a/Modules/Compiler/PGI.cmake	2026-08-25 17:10:30.000000000 +0200
++++ b/Modules/Compiler/PGI.cmake	2026-09-28 21:59:05.576407326 +0200
 @@ -18,7 +18,7 @@
    string(APPEND CMAKE_${lang}_FLAGS_INIT " ")
    string(APPEND CMAKE_${lang}_FLAGS_DEBUG_INIT " -g -O0")
